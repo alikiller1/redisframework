@@ -15,13 +15,13 @@ public class SecKillTest {
 	private static Long commidityId2 = 10000002L;
 	private 
 	RedisClient client;
-	public static String HOST = "127.0.0.1";
+	public static String HOST = "192.168.174.128";
 	private JedisPool jedisPool;
 	@Before
 	public synchronized void  beforeTest() throws IOException{
 		
 		
-		jedisPool = new JedisPool("127.0.0.1");
+		jedisPool = new JedisPool("192.168.174.128");
 		
 	}
 	
