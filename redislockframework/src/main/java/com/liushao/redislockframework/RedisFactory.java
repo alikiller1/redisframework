@@ -28,7 +28,7 @@ public class RedisFactory {
 	}
 	
 	public static RedisClient getDefaultClient(){
-		JedisPool pool = new JedisPool("192.168.174.128");
+		JedisPool pool = new JedisPool("127.0.0.1");
 		RedisClient client = new RedisClient(pool);
 		return client;
 	}
